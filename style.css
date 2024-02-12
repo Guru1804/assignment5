@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* at first we divide the grid as three parts  
+1)dashboard
+2)top
+3)main*/
+#container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: .7fr 1fr 1fr 1fr;
+    grid-template-rows: 150px repeat(3,1fr);
+    gap: 1px;
+    background-color: rgb(210, 126, 25);
+}
+/* the dashboard */
+#dashboard{
+    grid-row-start: 1;
+    grid-row-end:5 ;
+    background-color: #1992d4;
+    display: grid;
+}
+#das{
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 34px;
+    margin-top: 15px;
+}
+/* styling the link in the dashboard */
+#das-link1,#das-link2{
+    display: grid;
+    align-items:center;
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 16%;
+}
+#das-link1 a,#das-link2 a{
+    text-decoration: none;
+    color: white;
+}
+/* the top content */
+#top{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+#profile{
+    display: grid;
+    grid-template-columns: 10% 45% 45%;
+}
+/* this has the search bar and profile */
+#top1{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 4fr 3fr;
+    padding: 10px;
+}
+#search{
+    display:grid ;
+    grid-template-columns: .1fr 2fr;
+}
+#search input{
+    border-radius: 25px;
+    background-color: rgb(185, 183, 183);
+    color: white;
+    border: none;
+    height: 30px;
+}
+#top1 img,.bxs-bell-ring,#search1{
+    border-radius: 50%;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+}
+#bell{
+    display: grid;
+    justify-content: right;
+}
+#profile{
+    display: grid;
+    grid-template-columns: .8fr 2fr;
+}
+#profile1{
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+}
+/* here the welcome message and profile features are styled */
+#wel{
+    display: grid;
+    grid-template-columns: .1fr 1fr 1fr;
+}
+#wel img{
+    border-radius: 50%;
+}
+#wel-msg{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .4fr  1fr;
+}
+#btn{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+#btn button{
+    border-radius: 25px;
+    width: 85px;
+    background-color:#1992d4 ;
+    height: 40px;
+    color: white;
+    border: none;
+}
+#btn button:hover{
+    background-color:#004f7a ;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+/* the main is splited into two parts */
+#main{
+    grid-row-start: 2;
+    grid-row-end: span all;
+    grid-column-start: 2;
+    grid-column-end: span all;
+    background-color: #e2e6f0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+#ma-pro{
+    display: grid;
+    grid-template-rows: 15px 1fr;
+    /* height: 100%; */
+
+}
+/* first part has the project details */
+#project{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    background-color: inherit;
+    padding: 15px 15px 0px 15px;
+    gap: 2px;
+    /* height: 90%;  */
+}
+#project div{
+    background-color: rgb(255, 255, 255);
+    width:25vw;
+    height:18vh;
+    border-radius: 10px;
+    padding:15px;
+    box-shadow: .2px .4px 4px .5px black;
+    border-left: .5rem solid gold;   
+}
+#project div p{
+    font-size: 13px;
+}
+.tools{
+    display: grid;
+    grid-template-columns: .1fr .1fr .1fr;
+    justify-content: end;
+    align-items: end;
+    font-size: 20px;
+}
+/* second part contains announcements and trending users*/
+#Ant{
+    display: grid;
+    grid-template-rows: 1.5fr 1.5fr;  
+    padding: 3px;
+    height: 50%;
+    background-color: rgb(224, 224, 251);
+}
+#Ant p{
+    font-size: 10px;
+    line-height: 1rem;
+}
+#ann{
+    display: grid;
+    background-color: white;
+    text-align: left;
+    padding: 15px;
+    border-radius: 5px;
+    
+}
+#an1{
+    margin-bottom: 5px;
+}
+#ann div p{
+    margin-bottom:8px ;
+    border-bottom: 1px solid black;
+}
+#pro{
+    margin-left: 25px;
+}
+.tprofile{
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+    margin-top: 8px;
+    background-color: white;
+}
+#trending{
+    background-color: white;
+    height: 36vh;
+    padding: 2px;
+}
+#trending div h4{
+    background-color: #e2e6f0;
+}
+.tprofile img{
+    border-radius: 50%;
+}
